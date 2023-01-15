@@ -1,0 +1,64 @@
+.anim{
+    overflow: hidden;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    animation-iteration-count: infinite;
+    background-color: antiquewhite;
+
+    
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+
+    to {
+        margin-left: -50%;
+        width: 100%;
+    }
+}
+
+@keyframes box-animation {
+    from {
+        background-color: red;
+    }
+
+    25% {
+        background-color:aqua
+    }
+    50% {
+        background-color:bisque
+    }
+    75% {
+        background-color:chartreuse
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+.box {
+    background-color: yellow;
+    animation-name: box-animation;
+    animation-delay: 0s;
+    animation-fill-mode:backwards;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    width: 100px;
+    height: 100px;
+}
